@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green-letters: #00ad6a;
+    --bg-color: #eafaf1;
+    --btn-color: #1fe374;
+    --black: #080c16;
+    --gray: #d6dae5;
+    --white: #fcfcfc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+}
+
+.not-displayed {
+    display: none;
+}
+
+/* Header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.6rem 13.2rem;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: var(--green-letters);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--black);
+}
+
+.nav-selected {
+    font-weight: bold;
+    color: var(--black);
+}
+
+.nav-btn {
+    padding: .4rem .85rem;
+    border: 2px solid var(--green-letters);
+    font-weight: bold;
+    color: var(--green-letters);
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    box-shadow: -5px 5px 0px var(--green-letters);
+}
+
+#hamburger {
+    display: none;
+}
+
+/* Main section */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title,
+.main-desc {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3.75rem;
+    width: 35%;
+    letter-spacing: -.75px;
+    line-height: 3.5rem;
+}
+
+.main-desc {
+    width: 40%;
+    font-size: large;
+    line-height: 1.5rem;
+}
+
+/* Plans section */
+.main-plans {
+    margin: 0 auto;
+    width: 83.5%;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.first-plan,
+.second-plan,
+.third-plan {
+    margin: 0 auto;
+}
+
+.main-plans h2,
+.main-plans h3 {
+    color: var(--green-letters);
+}
+
+.main-plans ul {
+    padding-left: 1.1rem;
+}
+
+.main-plans li {
+    line-height: 1.5rem;
+}
+
+.main-plans button {
+    display: block;
+    background-color: var(--btn-color);
+    color: var(--black);
+    border: none;
+    margin: 1.5rem auto;
+    padding: 1rem 1.5rem;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    transition: transform;
+}
+
+.main-plans button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Left plan */
+.first-plan {
+    padding: 2rem;
+    width: 30%;
+}
+
+.first-plan h2 {
+    font-size: large;
+}
+
+.first-plan a {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+/* Middle plan */
+.second-plan {
+    border: 1px solid var(--green-letters);
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    background-color: white;
+    width: 35%;
+}
+
+.second-plan p:first-child {
+    margin: 0;
+    padding: .25rem;
+    text-align: center;
+    background-color: var(--green-letters);
+    color: var(--white);
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    font-size: small;
+    font-weight: bold;
+}
+
+.second-plan div {
+    padding: 2.5rem 1.25rem;
+}
+
+.second-plan h2 {
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -1px;
+}
+
+.price {
+    margin: .25rem auto;
+    font-size: x-large;
+    text-align: center;
+    color: grey;
+}
+
+.small-par {
+    margin: 2rem auto .1rem;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: bold;
+    color: var(--black);
+    letter-spacing: 1.5px;
+}
+
+.second-plan li,
+.third-plan li {
+    font-weight: lighter;
+    list-style-type: '✔️';
+    color: var(--black);
+    margin-bottom: .75rem;
+}
+
+/* Right plan */
+.third-plan {
+    width: 35%;
+    background-color: white;
+    border: .5px solid var(--gray);
+}
+
+.third-plan p:first-child {
+    margin: 0 auto;
+    padding: 1.5rem 3.5rem;
+    border-bottom: .5px solid var(--gray);
+    text-align: center;
+    background-color: var(--bg-color);
+    font-size: small;
+    line-height: 1.25rem;
+}
+
+.third-plan div {
+    padding: 2.5rem 1rem;
+}
+
+.third-plan h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 2.25rem;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+/* Subvert section */
+.subvert {
+    margin: 2rem auto 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subvert p:first-of-type {
+    font-size: x-large;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 2.2rem;
+}
+
+.subvert p:last-of-type {
+    font-size: small;
+    font-weight: bold;
+    color: var(--green-letters);
+    letter-spacing: 1.5px;
+}
+
+/* FAQ section */
+.faq {
+    padding: 5rem 13rem;
+    background-color: var(--white);
+}
+
+.faq h1 {
+    font-size: 2.5rem;
+    margin: 3rem auto;
+}
+
+.faq-grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.faq-grid h2,
+.faq-grid p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.faq-grid p {
+    color: gray;
+}
+
+/* Footer section */
+footer {
+    background-color: var(--black);
+    padding: 5.5rem 12rem .5rem;
+}
+
+footer div:first-of-type {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-signup {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-signup img {
+    width: 189px;
+}
+
+.footer-btn {
+    padding: 1rem;
+    width: 330px;
+    background-color: var(--btn-color);
+    color: var(--black);
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+}
+
+.footer-btn:hover {
+    cursor: pointer;
+    box-shadow: -5px 5px 0px gray;
+}
+
+.footer-flex {
+    width: 80%;
+    padding: 0 2rem;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-flex-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-flex h2 {
+    display: inline-block;
+    color: var(--white);
+}
+
+.footer-flex a {
+    display: inline-block;
+    color: var(--green-letters);
+    font-size: large;
+    margin: .5rem 0;
+    text-decoration: none;
+}
+
+.footer-flex a:hover {
+    color: var(--white);
+}
+
+.copyright {
+    margin: 4.5rem 0 0;
+    width: 40%;
+    color: gray;
+    font-size: small;
+}
+
+.copyright a {
+    color: gray;
+}
+
+@media screen and (max-width: 500px) {
+    /* Header section */
+    header {
+        padding: 0;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+    }
+    header img {
+        width: 120px;
+    }
+    header div {
+        padding: 1rem 1.25rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #hamburger {
+        display: inline-block;
+        max-width: 100%;
+        width: 50px;
+        height: 30px;
+    }
+    nav ul {
+        margin: 0;
+        padding: 1rem 2.25rem;
+        width: 100vw;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li a,
+    .nav-selected {
+        font-size: xx-large;
+    }
+    .nav-item {
+        margin: .5rem 0;
+    }
+    .nav-selected {
+        color: var(--green-letters);
+    }
+    .nav-btn {
+        background-color: var(--btn-color);
+        padding: .95rem 1.2rem;
+        border: none;
+        font-weight: bold;
+        color: var(--black);
+    }
+
+    .nav-btn:hover {
+        cursor: pointer;
+        box-shadow: -5px 5px 0px var(--black);
+    }
+    /* Main section */
+    .main-title, 
+    .main-desc,
+    .subvert p {
+        text-align: left;
+        padding: 0 1.25rem;
+        margin-bottom: .25rem;
+    }
+    .main-title {
+        margin-bottom: .75rem;
+        font-size: 2.95em;
+        width: unset;
+        letter-spacing: -1px;
+        line-height: unset;
+    }
+    .main-desc {
+        width: unset;
+        font-size: medium;
+    }
+    /* Plans section */
+    .main-plans {
+        flex-direction: column;
+        padding: 0;
+    }
+    .main-plans button:hover {
+        transform: scale(1.05);
+    }
+    .first-plan,
+    .second-plan,
+    .third-plan,
+    .faq {
+        padding: 0;
+        width: 100%;
+    }
+    .second-plan p:first-child {
+        padding: .75rem;
+    }
+    .second-plan {
+        margin-bottom: 1.5rem;
+    }
+    .second-plan h2 {
+        text-align: left;
+        width: 100%;
+        font-size: 1.95rem;
+        line-height: unset;
+        letter-spacing: -1px;
+        margin: 0;
+    }
+    .second-plan div,
+    .third-plan div {
+        padding: .75rem;
+    }
+    .second-plan div p {
+        text-align: left;
+    }
+    .second-plan button,
+    .third-plan button {
+        width: 100%;
+    }
+    .second-plan li,
+    .third-plan li {
+        font-weight: normal;
+    }
+    .third-plan p:first-child {
+        padding: 1rem 1.5rem;
+    }
+    .third-plan h3,
+    .third-plan p {
+        text-align: left;
+    }
+    /* Subvert section */
+    .subvert p:first-of-type {
+        width: 100%;
+        font-size: 1.35rem;
+        margin-bottom: .5rem;
+        line-height: unset;
+    }
+    .subvert p:last-of-type {
+        font-size: x-small;
+    }
+    /* FAQ section */
+    .faq {
+        padding: 3rem 1rem;
+    }
+    .faq h1 {
+        font-size: 1.75rem;
+        margin: 2rem auto;
+    }
+
+    .faq-grid {
+        grid-gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .faq-grid h2,
+    .faq-grid p {
+        font-size: 1rem;
+    }
+    /* Footer section */
+    footer {
+        padding: 0;
+    }
+    footer div:first-of-type {
+        flex-direction: column;
+    }
+    .footer-signup {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-signup img {
+        width: 109px;
+        margin: 1.5rem auto;
+    }
+
+    .footer-btn {
+        width: 87.5%;
+    }
+
+    .footer-flex {
+        padding: 0;
+        margin: 1.25rem auto;
+    }
+
+    .footer-flex h2,
+    .footer-flex a {
+        font-size: small;
+        margin: .25rem 0;
+        font-weight: bold;
+    }
+    .copyright {
+        margin: 0;
+        padding: .5rem 1rem 3rem;
+        width: 100%;
+    }
+
+    .copyright a {
+        color: gray;
+    }    
+}
